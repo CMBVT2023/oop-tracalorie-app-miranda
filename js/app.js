@@ -117,8 +117,8 @@ class App {
     constructor() {
         this._tracker = new CalorieTracker();
 
-        document.getElementById('meal-form').addEventListener('submit', this._newItem.bind(this));
-        document.getElementById('workout-form').addEventListener('submit', this._newItem.bind(this));
+        document.getElementById('meal-form').addEventListener('submit', this._newMeal.bind(this));
+        document.getElementById('workout-form').addEventListener('submit', this._newWorkout.bind(this));
     };
 
     _newMeal(e) {
